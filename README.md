@@ -1,4 +1,4 @@
-# Breezometer php
+# Forecast PHP
 
 [![Latest Version](https://img.shields.io/github/release/nwidart/forecast-php.svg?style=flat-square)](https://github.com/nwidart/forecast-php/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
