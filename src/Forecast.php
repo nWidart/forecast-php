@@ -34,11 +34,7 @@ class Forecast
         $this->guardAgainstEmptyArgument($latitude, 'latitude');
         $this->guardAgainstEmptyArgument($longitude, 'longitude');
 
-        $url = "{$this->endpoint}/{$this->apiKey}/$latitude,$longitude";
-
-        if ($time) {
-            $url .= ",$time";
-        }
+        $url = $this->getUrl($latitude, $longitude, $time);
 
         $forecast = $this->getClient()->get($url);
 
@@ -77,5 +73,22 @@ class Forecast
         if (empty($argument)) {
             throw new \InvalidArgumentException("$argumentName is required.");
         }
+    }
+
+    /**
+     * @param string $latitude
+     * @param string $longitude
+     * @param string $time
+     * @return string
+     */
+    private function getUrl($latitude, $longitude, $time)
+    {
+        $url = "{$this->endpoint}/{$this->apiKey}/$latitude,$longitude";
+
+        if ($time) {
+            $url .= ",$time";
+        }
+
+        return $url;
     }
 }
