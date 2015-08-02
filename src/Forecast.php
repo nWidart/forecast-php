@@ -9,12 +9,19 @@ class Forecast
      */
     private $apiKey;
 
+    /**
+     * @var string
+     */
     private $endpoint = 'https://api.forecast.io/forecast';
 
     /**
      * @var Client
      */
     private $client;
+    /**
+     * @var array
+     */
+    private $options;
 
     public function __construct($apiKey)
     {
@@ -39,6 +46,18 @@ class Forecast
         $forecast = $this->getClient()->get($url);
 
         return $forecast->json();
+    }
+
+    /**
+     * Set options on the request to be made to Forecast
+     * @param array $options
+     * @return $this
+     */
+    public function setOptions(array $options)
+    {
+        $this->options = $options;
+
+        return $this;
     }
 
     /**
@@ -87,6 +106,10 @@ class Forecast
 
         if ($time) {
             $url .= ",$time";
+        }
+
+        if ($this->options) {
+            $url .= '?' . http_build_query($this->options);
         }
 
         return $url;
