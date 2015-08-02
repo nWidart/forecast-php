@@ -21,12 +21,16 @@ class Forecast
         $this->apiKey = $apiKey;
     }
 
-    public function get($latitude = null, $longitude = null)
+    public function get($latitude = null, $longitude = null, $time = null)
     {
         $this->guardAgainstEmptyArgument($latitude, 'latitude');
         $this->guardAgainstEmptyArgument($longitude, 'longitude');
 
         $url = "{$this->endpoint}/{$this->apiKey}/$latitude,$longitude";
+
+        if ($time) {
+            $url .= ",$time";
+        }
 
         $forecast = $this->getClient()->get($url);
 
