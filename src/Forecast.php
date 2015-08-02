@@ -108,7 +108,7 @@ class Forecast
             $url .= ",$time";
         }
 
-        if ($this->options) {
+        if (! empty($this->options)) {
             $url .= '?' . http_build_query($this->options);
         }
 
