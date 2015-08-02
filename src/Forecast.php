@@ -21,6 +21,14 @@ class Forecast
         $this->apiKey = $apiKey;
     }
 
+    /**
+     * Get the weather for the given latitude and longitude
+     * Optionally pass in a time for the query
+     * @param null|string $latitude
+     * @param null|string $longitude
+     * @param null|string $time
+     * @return array
+     */
     public function get($latitude = null, $longitude = null, $time = null)
     {
         $this->guardAgainstEmptyArgument($latitude, 'latitude');
