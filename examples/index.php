@@ -6,4 +6,4 @@ $forecastPhp = new \Nwidart\ForecastPhp\Forecast('3da43a66de8ca36593e0f44324f496
 
 $info = $forecastPhp->get('40.7324296', '-73.9977264');
 
-var_dump($info); exit;
+var_dump($info);
