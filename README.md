@@ -2,8 +2,8 @@
 
 [![Latest Version](https://img.shields.io/github/release/nwidart/forecast-php.svg?style=flat-square)](https://github.com/nwidart/forecast-php/releases)
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
-[![Build Status](https://img.shields.io/travis/nwidart/forecast-php/master.svg?style=flat-square)](https://travis-ci.org/nwidart/forecast-php)
-[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/nwidart/forecast-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/nwidart/forecast-php/code-structure)
+[![Build Status](https://img.shields.io/travis/nWidart/forecast-php/master.svg?style=flat-square)](https://travis-ci.org/nWidart/forecast-php)
+[![Coverage Status](https://img.shields.io/scrutinizer/coverage/g/nWidart/forecast-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/nWidart/forecast-php/code-structure)
 [![Quality Score](https://img.shields.io/scrutinizer/g/nWidart/forecast-php.svg?style=flat-square)](https://scrutinizer-ci.com/g/nWidart/forecast-php)
 [![SensioLabs Insight](https://img.shields.io/sensiolabs/i/072037a8-c4d0-4ef8-ad9d-7edcdaea4619.svg)](https://insight.sensiolabs.com/projects/072037a8-c4d0-4ef8-ad9d-7edcdaea4619)
 [![Total Downloads](https://img.shields.io/packagist/dt/addapp/forecast-php.svg?style=flat-square)](https://packagist.org/packages/addapp/forecast-php)
