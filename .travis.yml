@@ -17,4 +17,4 @@ script:
 
 after_script:
   - php vendor/bin/ocular code-coverage:upload --format=php-clover coverage.clover
-  - php composer/bin/coveralls -v --exclude-no-stmt
+  - php vendor/bin/coveralls
